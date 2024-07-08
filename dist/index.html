@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hex color generator</title>
     <script src="https://kit.fontawesome.com/871f9d0282.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Tn0cA9A_.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-VAqUd09L.css">
 </head>
 <body>
-    <h1 class="text-center font-extrabold  mt-20 p-6">ACCORDIAN</h1>
-    <div class="main flex flex-col bg-blue-400 items-center">
-        <div class="acc w-80 flex flex-col justify-center align-bottom text-center border-black border-2">
-            <div class="quesb flex justify-between"> <span class="ques">why earth is round?</span> <span class="btn"> <i class="fa-solid fa-1x fa-arrow-down" class="align-middle mt-3 space-x-4"></i></span></div>
-            <div class="answer hidden flex justify-start">because of centerpetal force.</div>
-        </div>
-        <div class="acc w-80 flex flex-col justify-center align-bottom text-center border border-black">
-            <div class="quesb flex justify-between"> <span class="ques">why india is a good country?</span> <span class="btn"><i class="fa-solid fa-1x fa-arrow-down" class="align-middle mt-3 space-x-4"></i></span></div>
-            <div class="answer  hidden flex justify-start">because of his hospitality.</div>
-        </div>
-        <div class="acc  w-80 flex flex-col justify-center align-bottom text-center border-black border-2">
-            <div class="quesb flex justify-between"> <span class="ques">who is pm of india?</span> <span class="btn"><i class="fa-solid fa-1x fa-arrow-down" class="align-middle mt-3 space-x-4"></i></span></div>
-            <div class="answer hidden flex justify-start" >narinder modi</div>
-        </div>
+<div class="main flex p-2">
+    <div class="one  flex flex-col items-center space-y-3 justify-center bg-green-500 w-[50%] h-screen border-2 border-y-white">
+        <div class="field">your hex color code</div>
+        <button class="changer cursor-pointer bg-yellow-200 p-1">Create Hex Color</button>
     </div>
+    
+
+
+    <div class="two flex flex-col items-center justify-center text-white bg-green-950 w-[50%] h-screen  border-2 border-y-white">
+        <div class="field1">your color comes here</div>
+        <form class="form flex flex-col">
+            <label for="red">red</label>
+            <input type="range" class="red" min="0"  max="255">
+            <label for="green">green</label>
+            <input type="range" class="green" min="0" max="255">
+            <label for="blue">blue</label>
+            <input type="range" class="blue" min="0" max="255">
+
+        </form>
+        
+    <button class="changer1 bg-pink-700 p-2 mt-1">create rgb color</button>
+    </div>
+</div>
+     
     <script src="app.js"></script>
 </body>
 </html>
